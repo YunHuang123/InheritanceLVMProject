@@ -8,4 +8,12 @@ public class VolumeGroups extends LVM{
         lV = new ArrayList<LogicalVolume>();
     }
 
+    public void addToLV(LogicalVolume l){
+        lV.add(l);
+    }
+
+    public void addToPV(PhysicalVolume p){
+        pV.add(p);
+    }
+
 }

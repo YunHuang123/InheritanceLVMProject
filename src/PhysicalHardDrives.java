@@ -5,8 +5,11 @@ public class PhysicalHardDrives extends LVM{
         super(name);
         size = s;
     }
-
     public int getSize(){
         return size;
+    }
+
+    public void printInfo(){
+        System.out.println(getName() + "[" + size + "G][" + getUuid() + "]");
     }
 }
